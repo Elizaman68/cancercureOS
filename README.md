@@ -1,10 +1,12 @@
 # cancercureOS
-Investigación abierta de biofisica y psicologia para eliminar el cáncer infantil sin dolor.   Open Source  biophysics and Pshychology research to eliminate pediatric cancer painlessly.
-Light and Color Project 🌟 - Healing Through Play
+Investigación abierta de biofisica y psicologia para eliminar el cáncer infantil sin dolor.  
+Open Source  biophysics and Pshychology research to eliminate pediatric cancer painlessly.
+Light and Color Project 🌟 - Healing Through: attenuation, resonance frequencies in DNA/RNA, and ultrasound physics.
 🧬 Open Source Biomedical Research for Pediatric Oncology
 Welcome to a collaborative space where biophysics, interactive technology, and psychology unite to build a gift for humanity: eliminating pain and fear for children fighting cancer. 
 🎯 Our Mission
-The suffering of an innocent child should never carry a patent or a price tag. Our goal is to design low-cost frequency devices (focused ultrasound and radiofrequency hyperthermia) capable of disrupting the DNA of cancer cells painlessly, seamlessly integrated into a magical, playful hospital environment. 
+The suffering of an innocent child should never carry a patent or a price tag. 
+Our goal is to design low-cost frequency devices (focused ultrasound and radiofrequency hyperthermia) capable of disrupting the DNA of cancer cells painlessly, seamlessly integrated into a magical, playful hospital environment. 
 🎨 The Concept: The Fear-Free Environment
 We are designing an experience grounded in psychoneuroimmunology and cognitive distraction: 
 Earthing/Grounding: Children enter the therapeutic room barefoot, naturally calming their nervous system. 
@@ -27,11 +29,12 @@ The repository is structured into three main areas of development:
 Project Licensing: This project is protected under an Open Source license. All knowledge generated here belongs to humanity and can never be privatized or patented by commercial corporations. 
 Let's turn healing into an interactive playground of light, science, and love!
 
-Proyecto Luz y Color 🌟 - Sanar Jugando
+Proyecto Luz y Color 🌟 - Sanar mediante: atenuación de ondas, frecuencias de resonancia en ADN/ARN y ultrasonido
 🧬 Medicina Biomédica de Código Abierto (Open Source) para la Oncología Pediátrica
 Bienvenido a un espacio de investigación y desarrollo donde la biofísica, la tecnología interactiva y la psicología se unen para crear un regalo para la humanidad: eliminar el dolor y el miedo en los niños que luchan contra el cáncer.
 🎯 Nuestra Misión
-El dolor de un niño inocente no puede tener una patente ni una etiqueta de precio. El objetivo de este proyecto es diseñar dispositivos de frecuencia de bajo costo (ultrasonido focalizado e hipertermia por radiofrecuencia) capaces de desactivar el ADN de las células enfermas sin dolor ni efectos secundarios, integrados de forma nativa en un entorno hospitalario lúdico y mágico. 
+El dolor de un niño inocente no puede tener una patente ni una etiqueta de precio. 
+El objetivo de este proyecto es diseñar dispositivos de frecuencia de bajo costo (ultrasonido focalizado e hipertermia por radiofrecuencia) capaces de desactivar el ADN de las células enfermas sin dolor ni efectos secundarios, integrados de forma nativa en un entorno hospitalario lúdico y mágico. 
 🎨 El Concepto: El Entorno Sin Miedo
 Diseñamos una experiencia basada en la psiconeuroinmunología y la distracción cognitiva: 
 Puesta a Tierra (Earthing): Los niños entran descalzos al espacio terapéutico, relajando su sistema nervioso.
