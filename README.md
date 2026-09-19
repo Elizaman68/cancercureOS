@@ -55,4 +55,12 @@ El repositorio está dividido en tres grandes áreas de desarrollo:
 /hardware-emisores-bajo-costo: Diseños de circuitos y antenas para la emisión de frecuencias (kHz/MHz).
 /software-entorno-interactivo: Código para las paredes sensoriales y luces LED interactivas. 
 Licencia del Proyecto: Este proyecto está protegido bajo una licencia de Código Abierto (Open Source). Todo el conocimiento generado aquí pertenece a la humanidad y nunca podrá ser privatizado o patentado por empresas comerciales. 
-¡Hagamos de la sanación un juego interactivo de luz, ciencia y amor! 
+¡Hagamos de la sanación un juego interactivo de luz, ciencia y amor!
+
+## 🗺️ Estructura del Repositorio / Repository Structure
+
+Para facilitar la colaboración descentralizada, el proyecto está dividido en tres áreas independientes (Local-First, sin dependencias de servidores centralizados):
+
+* **`/investigacion-medica-y-psicologia`**: Documentación teórica sobre biofísica, Histotripsia, límites de SAR e impedancia celular.
+* **`/android-app-carcasa`**: Código fuente de la interfaz de usuario universal (Android/Jetpack Compose) con navegación por pestañas y tutorial lúdico integrado.
+* **`/hardware-cilindro-cobre`**: Planos técnicos para la construcción de la cabina cilíndrica, bobinas helicoidales y sensores capacitivos.
