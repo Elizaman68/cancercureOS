@@ -1,11 +1,32 @@
-id_patogeno,nombre_comun,familia_virologica,picos_espectro_thz,frecuencia_distorsion_khz,tiempo_minutos,exposicion_semanal,notas_seguridad_biologica
-v_hpv_16,Virus del Papiloma Humano (Cepa 16),Papillomaviridae,3.2|5.8|8.4,395.2,45,3,Resonancia acustico-mecanica inducida en la capside proteica.
-v_hpv_18,Virus del Papiloma Humano (Cepa 18),Papillomaviridae,3.3|5.9|8.6,397.0,45,3,Cepa oncogenica de alto riesgo. Calibracion de subarmonicos por homologia.
-v_flu_a,Virus de la Influenza Tipo A,Orthomyxoviridae,4.1|8.2|16.4,412.0,30,3,Interferencia en la proteina hemaglutinina para frenar replicacion.
-v_flu_b,Virus de la Influenza Tipo B,Orthomyxoviridae,4.2|8.4|16.8,414.5,30,3,Gripe estacional comun. Modulacion por pulsos cortos no termicos.
-v_sars_cov2,SARS-CoV-2 (Variantes Globales),Coronaviridae,5.5|11.0|22.0,440.0,30,3,Sintonizacion estructural basada en modelos de resonancia del MIT.
-v_dengue_1,Virus del Dengue (Serotipo 1),Flaviviridae,4.8|9.6|14.4,425.0,45,3,Vital para zonas tropicales. Altera el acoplamiento a receptores celulares.
-v_dengue_2,Virus del Dengue (Serotipo 2),Flaviviridae,4.9|9.8|14.7,427.2,45,3,Monitorear recuento plaquetario del paciente de forma externa.
-v_ebv,Virus de Epstein-Barr (Mononucleosis),Herpesviridae,6.0|12.0|24.0,460.0,45,4,Asociado a linfomas pediatricos. Disrupcion electromagnetica del huso mitotico.
-v_rsv,Virus Sincitial Respiratorio (VSR),Pneumoviridae,3.8|7.6|11.4,390.0,30,3,Alta prioridad en pediatria. Reduce la carga viral en vias respiratorias.
-v_rotavirus_a,Rotavirus Pediatrico Tipo A,Reoviridae,5.0|10.0|20.0,432.0,30,3,Infecciones gastrointestinales infantiles severas. Evitar deshidratacion.
+id_patogeno,nombre_comun,grupo_baltimore,familia_virologica,picos_espectro_thz,frecuencia_distorsion_khz,tiempo_minutos,exposicion_semanal,notas_seguridad_biologica
+v_hpv_16,Virus del Papiloma Humano (Cepa 16),Grupo I (dsDNA),Papillomaviridae,3.2|5.8|8.4,395.2,45,3,Resonancia acustico-mecanica en capside. Alto riesgo oncogenico.
+v_hpv_18,Virus del Papiloma Humano (Cepa 18),Grupo I (dsDNA),Papillomaviridae,3.3|5.9|8.6,397.0,45,3,Cepa oncogenica de alto riesgo. Calibracion por homologia estructural.
+v_hpv_6,Virus del Papiloma Humano (Cepa 6),Grupo I (dsDNA),Papillomaviridae,3.0|5.4|7.8,390.5,45,3,Cepa de bajo riesgo. Estimulacion resonante de proteinas L1.
+v_hpv_11,Virus del Papiloma Humano (Cepa 11),Grupo I (dsDNA),Papillomaviridae,3.1|5.5|8.0,392.1,45,3,Cepa de bajo riesgo asociada a papilomatosis laringea.
+v_ebv,Virus de Epstein-Barr (Mononucleosis),Grupo I (dsDNA),Herpesviridae,6.0|12.0|24.0,460.0,45,4,Asociado a linfomas pediatricos. Disrupcion de huso mitotico en mitosis.
+v_cmv,Citomegalovirus Humano,Grupo I (dsDNA),Herpesviridae,5.8|11.6|23.2,455.5,45,3,Prioridad en pacientes inmunosuprimidos. Interferencia de replicacion.
+v_hsv_1,Virus del Herpes Simple Tipo 1,Grupo I (dsDNA),Herpesviridae,5.4|10.8|21.6,445.0,30,3,Infecciones mucocutaneas. Modulacion por pulsos cortos no termicos.
+v_hsv_2,Virus del Herpes Simple Tipo 2,Grupo I (dsDNA),Herpesviridae,5.5|11.0|22.0,447.2,30,3,Frecuencia calibrada para desestabilizacion de envoltura lipidica.
+v_varicella,Virus de la Varicela-Zoster,Grupo I (dsDNA),Herpesviridae,5.2|10.4|20.8,440.1,45,3,Manejo del dolor neurologico por reduccion de carga viral activa.
+v_adenovirus,Adenovirus Humano Tipo 5,Grupo I (dsDNA),Adenoviridae,4.8|9.6|14.4,410.0,30,3,Infecciones respiratorias y gastrointestinales en guarderias.
+v_parvovirus_b19,Parvovirus Humano B19,Grupo II (ssDNA),Parvoviridae,2.7|5.4|10.8,365.0,30,3,Causa el eritema infeccioso infantil. Virus de cadena sencilla de ADN.
+v_rotavirus_a,Rotavirus Pediatrico Tipo A,Grupo III (dsRNA),Reoviridae,5.0|10.0|20.0,432.0,30,3,Principal causa de diarrea infantil severa. Monitorear deshidratacion.
+v_rotavirus_b,Rotavirus Pediatrico Tipo B,Grupo III (dsRNA),Reoviridae,5.1|10.2|20.4,434.5,30,3,Cepa epidemiologica. Calibracion de pulso electromagnetico adaptativo.
+v_flu_a,Virus de la Influenza Tipo A,Grupo V (ssRNA-),Orthomyxoviridae,4.1|8.2|16.4,412.0,30,3,Gripe estacional y pandemica. Interferencia en hemaglutinina.
+v_flu_b,Virus de la Influenza Tipo B,Grupo V (ssRNA-),Orthomyxoviridae,4.2|8.4|16.8,414.5,30,3,Infecciones respiratorias severas en niños y adultos mayores.
+v_rsv_a,Virus Sincitial Respiratorio (Cepa A),Grupo V (ssRNA-),Pneumoviridae,3.8|7.6|11.4,390.0,30,3,Alta prioridad en lactantes. Reduce obstruccion bronquial mecanica.
+v_rsv_b,Virus Sincitial Respiratorio (Cepa B),Grupo V (ssRNA-),Pneumoviridae,3.9|7.8|11.7,392.4,30,3,Cepa complementaria. Sintonizacion por simetria helicoidal.
+v_measles,Virus del Sarampion,Grupo V (ssRNA-),Paramyxoviridae,4.6|9.2|13.8,420.0,30,3,Vital para zonas sin esquemas completos de vacunacion.
+v_mumps,Virus de la Parotiditis (Paperas),Grupo V (ssRNA-),Paramyxoviridae,4.4|8.8|13.2,416.0,30,3,Prevencion de complicaciones neurologicas y glandulares.
+v_rubella,Virus de la Rubeola,Grupo IV (ssRNA+),Matonaviridae,3.6|7.2|10.8,382.0,30,3,Infecciones exantematicas. Desestabilizacion de la capside icosaedrica.
+v_dengue_1,Virus del Dengue (Serotipo 1),Grupo IV (ssRNA+),Flaviviridae,4.8|9.6|14.4,425.0,45,3,Vital para zonas tropicales. Altera acoplamiento a receptores.
+v_dengue_2,Virus del Dengue (Serotipo 2),Serotipo II,Flaviviridae,4.9|9.8|14.7,427.2,45,3,Cepa asociada a complicaciones mayores. Monitoreo externo riguroso.
+v_dengue_3,Virus del Dengue (Serotipo 3),Serotipo III,Flaviviridae,4.7|9.4|14.1,423.1,45,3,Frecuencia sintonizada para inhibicion de proteina NS1.
+v_dengue_4,Virus del Dengue (Serotipo 4),Serotipo IV,Flaviviridae,4.6|9.2|13.8,421.0,45,3,Frecuencia complementaria para control en brotes epidemicos.
+v_zika,Virus del Zika,Grupo IV (ssRNA+),Flaviviridae,4.5|9.0|13.5,418.0,45,3,Prevencion de daños neurologicos. Ondas de baja intensidad en seco.
+v_chikungunya,Virus Chikungunya,Grupo IV (ssRNA+),Togaviridae,4.3|8.6|12.9,415.5,45,3,Alivio del dolor articular cronico por reduccion de lisis viral.
+v_sars_cov2,SARS-CoV-2 (Variantes Omicro/Delta),Grupo IV (ssRNA+),Coronaviridae,5.5|11.0|22.0,440.0,30,3,Basado en simulaciones de resonancia estructural acustica del MIT.
+v_enterovirus_71,Enterovirus 71 (Boca-Mano-Pie),Grupo IV (ssRNA+),Picornaviridae,3.5|7.0|10.5,380.0,30,3,Infeccion infantil altamente contagiosa en escuelas y estancias.
+v_hepatitis_a,Virus de la Hepatitis A,Grupo IV (ssRNA+),Picornaviridae,3.4|6.8|10.2,378.2,45,3,Infeccion hepatica aguda infantil. Aceleracion de aclaramiento viral.
+v_hepatitis_c,Virus de la Hepatitis C,Grupo IV (ssRNA+),Flaviviridae,4.0|8.0|12.0,405.0,45,4,Infeccion cronica. Sintonizacion mecanica sobre la polimerasa viral.
+v_hiv_1,Virus de la Inmunodeficiencia Humana (VIH-1),Grupo VI (ssRNA-RT),Retroviridae,5.0|10.0|15.0,430.0,45,4,Inhibicion mecanica de la retrotranscriptasa. Bloqueo de replica local.
