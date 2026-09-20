@@ -1,0 +1,11 @@
+id_patogeno,nombre_comun,familia_virologica,picos_espectro_thz,frecuencia_distorsion_khz,tiempo_minutos,exposicion_semanal,notas_seguridad_biologica
+v_hpv_16,Virus del Papiloma Humano (Cepa 16),Papillomaviridae,3.2|5.8|8.4,395.2,45,3,Resonancia acustico-mecanica inducida en la capside proteica.
+v_hpv_18,Virus del Papiloma Humano (Cepa 18),Papillomaviridae,3.3|5.9|8.6,397.0,45,3,Cepa oncogenica de alto riesgo. Calibracion de subarmonicos por homologia.
+v_flu_a,Virus de la Influenza Tipo A,Orthomyxoviridae,4.1|8.2|16.4,412.0,30,3,Interferencia en la proteina hemaglutinina para frenar replicacion.
+v_flu_b,Virus de la Influenza Tipo B,Orthomyxoviridae,4.2|8.4|16.8,414.5,30,3,Gripe estacional comun. Modulacion por pulsos cortos no termicos.
+v_sars_cov2,SARS-CoV-2 (Variantes Globales),Coronaviridae,5.5|11.0|22.0,440.0,30,3,Sintonizacion estructural basada en modelos de resonancia del MIT.
+v_dengue_1,Virus del Dengue (Serotipo 1),Flaviviridae,4.8|9.6|14.4,425.0,45,3,Vital para zonas tropicales. Altera el acoplamiento a receptores celulares.
+v_dengue_2,Virus del Dengue (Serotipo 2),Flaviviridae,4.9|9.8|14.7,427.2,45,3,Monitorear recuento plaquetario del paciente de forma externa.
+v_ebv,Virus de Epstein-Barr (Mononucleosis),Herpesviridae,6.0|12.0|24.0,460.0,45,4,Asociado a linfomas pediatricos. Disrupcion electromagnetica del huso mitotico.
+v_rsv,Virus Sincitial Respiratorio (VSR),Pneumoviridae,3.8|7.6|11.4,390.0,30,3,Alta prioridad en pediatria. Reduce la carga viral en vias respiratorias.
+v_rotavirus_a,Rotavirus Pediatrico Tipo A,Reoviridae,5.0|10.0|20.0,432.0,30,3,Infecciones gastrointestinales infantiles severas. Evitar deshidratacion.
