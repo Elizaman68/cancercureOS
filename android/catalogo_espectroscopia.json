@@ -1,0 +1,76 @@
+{
+"proyecto": "cancercureOS",
+"licencia": "MIT - Patrimonio Libre para la Humanidad",
+"filosofia": "Descentralizado y Autónomo (Local-First). Diseñado para operar en zonas de crisis sin conectividad a internet.",
+"biblioteca_espectroscopica_universal": {
+"ONCOLOGIA_PEDIATRICA_Y_ADULTOS": {
+"tumor_hepatico_hepatoblastoma": {
+"nombre": "Hepatoblastoma (Cáncer de Hígado Pediátrico)",
+"picos_espectro_thz": [5.1, 10.2, 15.3],
+"frecuencia_disorcion_khz": 700.0,
+"tiempo_sesion_minutos": 45,
+"notas": "Frecuencia calibrada bajo el estándar clínico no térmico de la Universidad de Michigan."
+},
+"glioblastoma_cerebral": {
+"nombre": "Glioblastoma Multiforme (Tumor Cerebral)",
+"picos_espectro_thz": [3.4, 6.8, 13.6],
+"frecuencia_disorcion_khz": 200.0,
+"tiempo_sesion_minutos": 45,
+"notas": "Frecuencia baja de alta penetración ósea para distorsión del huso mitótico (TTFields)."
+},
+"leucemia_linfoblastica_aguda": {
+"nombre": "Leucemia Linfoblástica Aguda (Células B)",
+"picos_espectro_thz": [6.2, 12.4, 24.8],
+"frecuencia_disorcion_khz": 450.0,
+"tiempo_sesion_minutos": 45,
+"notas": "Calibración electromagnética para disrupción de membrana de blastos circulantes."
+}
+},
+"VIROLOGIA_GLOBAL_Y_PANDEMICA": {
+"virus_papiloma_humano_hpv16": {
+"nombre": "Virus del Papiloma Humano (Cepa 16)",
+"picos_espectro_thz": [3.2, 5.8, 8.4],
+"frecuencia_disorcion_khz": 395.2,
+"tiempo_sesion_minutos": 45,
+"notas": "Resonancia acústico-mecánica inducida para fractura de la cápside proteica del virus."
+},
+"influenza_virus_a": {
+"nombre": "Virus de la Influenza Tipo A (Gripe Estacional)",
+"picos_espectro_thz": [4.1, 8.2, 16.4],
+"frecuencia_disorcion_khz": 412.0,
+"tiempo_sesion_minutos": 30,
+"notas": "Frenado de replicación por interferencia de la proteína hemaglutinina viral."
+},
+"coronavirus_sars_cov2": {
+"nombre": "SARS-CoV-2 (Variantes Globales Envolventes)",
+"picos_espectro_thz": [5.5, 11.0, 22.0],
+"frecuencia_disorcion_khz": 440.0,
+"tiempo_sesion_minutos": 30,
+"notas": "Sintonización basada en las simulaciones de resonancia estructural del MIT."
+}
+},
+"BACTERIOLOGIA_Y_PATOGENOS_ZONAS_DE_CRISIS": {
+"vibrio_cholerae": {
+"nombre": "Vibrio cholerae (Bacteria del Cólera - Crisis de Agua)",
+"picos_espectro_thz": [2.8, 5.6, 11.2],
+"frecuencia_disorcion_khz": 365.0,
+"tiempo_sesion_minutos": 45,
+"notas": "Vital para campamentos de refugiados. Altera el potencial de membrana de la bacteria."
+},
+"mycobacterium_tuberculosis": {
+"nombre": "Mycobacterium tuberculosis (Tuberculosis Pulmonar)",
+"picos_espectro_thz": [7.1, 14.2, 28.4],
+"frecuencia_disorcion_khz": 512.0,
+"tiempo_sesion_minutos": 45,
+"notes": "Eficaz contra cepas resistentes a antibióticos en comunidades aisladas."
+},
+"escherichia_coli_patogenica": {
+"nombre": "Escherichia coli (Infecciones Gastrointestinales)",
+"picos_espectro_thz": [3.9, 7.8, 15.6],
+"frecuencia_disorcion_khz": 388.5,
+"tiempo_sesion_minutos": 45,
+"notas": "Desestabilización mecánica de los enlaces de la pared celular bacteriana."
+}
+}
+}
+}
