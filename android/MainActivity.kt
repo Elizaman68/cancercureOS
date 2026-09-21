@@ -1,10 +1,12 @@
 package com.cancercureos.app
-import androidx.compose.foundation.lazy.items
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -202,10 +204,8 @@ fun PantallaBibliotecaCodigo() {
     var isLoading by remember { mutableStateOf(true) }
     var errorMessage by remember { mutableStateOf<String?>(null) }
 
-    
     LaunchedEffect(Unit) {
         try {
-            
             DataPipelineManager.synchronizeDataStreams(context)
             signalProfiles = DataPipelineManager.loadLocalProfiles(context)
         } catch (e: Exception) {
@@ -226,7 +226,7 @@ fun PantallaBibliotecaCodigo() {
             Text("Integrated signal matrix running under free MIT License authorization.", fontSize = 14.sp, color = Color.Gray)
             Spacer(modifier = Modifier.height(12.dp))
 
-            LazyColumn(modifier = Modifier.fillWeight(1f)) {
+            LazyColumn(modifier = Modifier.fillMaxWidth().weight(1f)) {
                 items(signalProfiles) { profile ->
                     Card(
                         modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp),
@@ -237,15 +237,6 @@ fun PantallaBibliotecaCodigo() {
                             Text("Classification Group: ${profile.group}", fontSize = 12.sp, fontWeight = FontWeight.Medium)
                             Spacer(modifier = Modifier.height(6.dp))
                             
-                            
                             profile.spectralPeaks.forEachIndexed { index, peakValue ->
                                 Text("• Channel ${index + 1} Reference: $peakValue THz", fontSize = 13.sp, color = Color.DarkGray)
                             }
-                            Text("• Calculated Target Execution: ${profile.targetFrequencyKhz} kHz", fontSize = 13.sp, fontWeight = FontWeight.SemiBold, color = Color(0xFF2E7D32))
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
