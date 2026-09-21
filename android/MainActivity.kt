@@ -197,15 +197,55 @@ fun PantallaFrecuenciasElicitadas() {
 
 @Composable
 fun PantallaBibliotecaCodigo() {
-    Column(
-        modifier = Modifier.fillMaxSize().padding(24.dp),
-        horizontalAlignment = Alignment.Start,
-        verticalArrangement = Arrangement.Top
-    ) {
-        Text("📚 GLOBAL OPEN SOURCE", fontSize = 22.sp, fontWeight = FontWeight.Bold, color = Color.Black)
-        Spacer(modifier = Modifier.height(16.dp))
-        Text("This system belongs to humanity under the free MIT License.", fontSize = 16.sp)
-        Spacer(modifier = Modifier.height(8.dp))
-        Text("• Spectroscopy Module (Data): Ready (Releases)\n• Signal Generation Module (Software): Local integration in progress", fontSize = 14.sp, color = Color.Gray)
+    val context = androidx.compose.ui.platform.LocalContext.current
+    var signalProfiles by remember { mutableStateOf<List<SignalProfile>>(emptyList()) }
+    var isLoading by remember { mutableStateOf(true) }
+    var errorMessage by remember { mutableStateOf<String?>(null) }
+
+    
+    LaunchedEffect(Unit) {
+        try {
+            
+            DataPipelineManager.synchronizeDataStreams(context)
+            signalProfiles = DataPipelineManager.loadLocalProfiles(context)
+        } catch (e: Exception) {
+            errorMessage = e.message
+        }
+        isLoading = false
+    }
+
+    when {
+        isLoading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            CircularProgressIndicator(color = Color(0xFF1A73E8))
+        }
+        errorMessage != null -> Box(Modifier.fillMaxSize().padding(24.dp), contentAlignment = Alignment.Center) {
+            Text(errorMessage ?: "Unknown execution error", fontSize = 14.sp, color = Color.Red)
+        }
+        else -> Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
+            Text("📚 GLOBAL OPEN SOURCE REPOSITORY", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = Color.Black)
+            Text("Integrated signal matrix running under free MIT License authorization.", fontSize = 14.sp, color = Color.Gray)
+            Spacer(modifier = Modifier.height(12.dp))
+
+            LazyColumn(modifier = Modifier.fillWeight(1f)) {
+                items(signalProfiles) { profile ->
+                    Card(
+                        modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp),
+                        colors = CardDefaults.cardColors(containerColor = Color(0xFFF8F9FA))
+                    ) {
+                        Column(modifier = Modifier.padding(12.dp)) {
+                            Text(profile.label, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = Color(0xFF1A73E8))
+                            Text("Classification Group: ${profile.group}", fontSize = 12.sp, fontWeight = FontWeight.Medium)
+                            Spacer(modifier = Modifier.height(6.dp))
+                            
+                            
+                            profile.spectralPeaks.forEachIndexed { index, peakValue ->
+                                Text("• Channel ${index + 1} Reference: $peakValue THz", fontSize = 13.sp, color = Color.DarkGray)
+                            }
+                            Text("• Calculated Target Execution: ${profile.targetFrequencyKhz} kHz", fontSize = 13.sp, fontWeight = FontWeight.SemiBold, color = Color(0xFF2E7D32))
+                        }
+                    }
+                }
+            }
+        }
     }
 }
