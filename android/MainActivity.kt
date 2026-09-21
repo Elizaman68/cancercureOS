@@ -206,6 +206,7 @@ fun PantallaBibliotecaCodigo() {
         Spacer(modifier = Modifier.height(16.dp))
         Text("This system belongs to humanity under the free MIT License.", fontSize = 16.sp)
         Spacer(modifier = Modifier.height(8.dp))
-        Text("• Spectroscopy Module (Light): Ready (Releases)\n• Oscillator Module (Copper): Local integration in progress", fontSize = 14.sp, color = Color.Gray)
+        Text("• Spectroscopy Module (Data): Ready (Releases)\n• Signal Generation Module (Software): Local integration in progress", fontSize = 14.sp, color = Color.Gray)
     }
 }
+
