@@ -79,7 +79,7 @@ fun PantallaInicioTutorial() {
         Spacer(modifier = Modifier.height(32.dp))
         
         Button(
-            onClick = { /* Spectrometer optical trigger sequence */ },
+            onClick = { /* Spectrometer data trigger sequence */ },
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1A73E8))
         ) {
             Text("START SCAN", fontSize = 18.sp, modifier = Modifier.padding(8.dp))
@@ -104,7 +104,7 @@ fun PantallaFrecuenciasElicitadas() {
         if (segundosTranscurridos >= segundosObjetivo) {
             estaMidiendo = false
             isHardwarePaused = false
-            println("cancercureOS: SESSION COMPLETED - Disabling copper coil emission (0 kHz).")
+            println("cancercureOS: SESSION COMPLETED - Terminating signal execution (0 kHz).")
         }
     }
 
@@ -156,7 +156,7 @@ fun PantallaFrecuenciasElicitadas() {
                         segundosTranscurridos = 0
                         isHardwarePaused = false
                         estaMidiendo = true
-                        println("cancercureOS: HARDWARE ACTIVATED - Resonant emission started.")
+                        println("cancercureOS: SIGNAL PROCESSOR ACTIVATED - Emitting targeted frequencies.")
                     },
                     colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1B5E20))
                 ) {
@@ -167,9 +167,9 @@ fun PantallaFrecuenciasElicitadas() {
                     onClick = { 
                         isHardwarePaused = !isHardwarePaused
                         if (isHardwarePaused) {
-                            println("cancercureOS: CRITICAL PAUSE - Disabling copper coil safely.")
+                            println("cancercureOS: PIPELINE PAUSED - Halting digital signature processing safely.")
                         } else {
-                            println("cancercureOS: RESUMING - Reactivating molecular impedance alignment.")
+                            println("cancercureOS: RESUMING - Realigning computational data stream.")
                         }
                     },
                     colors = ButtonDefaults.buttonColors(
@@ -183,7 +183,7 @@ fun PantallaFrecuenciasElicitadas() {
                     estaMidiendo = false
                     isHardwarePaused = false
                     segundosTranscurridos = 0
-                    println("cancercureOS: EMERGENCY RESET - System completely powered off.")
+                    println("cancercureOS: EMERGENCY STOP - Clearing runtime processes.")
                 }) { 
                     Text("Stop") 
                 }
@@ -209,4 +209,3 @@ fun PantallaBibliotecaCodigo() {
         Text("• Spectroscopy Module (Data): Ready (Releases)\n• Signal Generation Module (Software): Local integration in progress", fontSize = 14.sp, color = Color.Gray)
     }
 }
-
